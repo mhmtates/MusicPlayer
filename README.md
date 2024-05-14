@@ -1,3 +1,3 @@
 **Music Player**
 ------------
-Türkçe ve ingilizce şarkılardan oluşan bir site
+Yerli ve yabancı şarkılardan oluşan bir site
