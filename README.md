@@ -1,3 +1,3 @@
 **Music Player**
 ------------
-Yerli ve yabancı şarkılardan oluşan bir site
+Digiway Akademi'de yapmış olduğum yerli ve yabancı şarkılardan oluşan bir site
