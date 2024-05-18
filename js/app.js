@@ -28,7 +28,7 @@ function displayMusic(music) {
     title.innerHTML = music.getName();
     singer.innerHTML = music.singer;
     image.src = "img/" + music.img;
-    audio.src = "mp3/" + music.file;
+    audio.src = "audio/" + music.file;
 }
 
 play.addEventListener("click", () => {
@@ -135,9 +135,10 @@ const displayMusicList = (list) => {
         {
            let liTag = 
            `<li li-index='${i}' onclick="selectedMusic(this)" class="list-group-item d-flex justify-content-between align-items-center">
-                <span>${list[i].getName()}</span>
+                <span>${list[i].getName()} - ${list[i].singer}</span>
+                
                 <span id="music-${i}" class="badge bg-primary rounded-pill"></span> 
-                <audio class="music-${i}" src="mp3/${list[i].file}"><audio>                       
+                <audio class="music-${i}" src="audio/${list[i].file}"><audio>                       
              </li>`;
            
              ul.insertAdjacentHTML("beforeend", liTag);

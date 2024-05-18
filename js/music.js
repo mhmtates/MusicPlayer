@@ -1,5 +1,5 @@
 class Music{
-    constructor(title, singer,img, file){
+    constructor(title,singer,img,file){
         this.title = title;
         this.singer = singer;
         this.img = img;
@@ -7,13 +7,13 @@ class Music{
     }
 
     getName(){
-        return this.title + " - " + this.singer;
+        return this.title;
     }
 }
 
 const musicList = [
     new Music("Bir Bahar Akşamı","Yalın","Yalın-Bir-Bahar-Akşamı.jpg","Yalın-Bir-Bahar-Akşamı.mp3"),
-    new Music("Üzülmedin Mi","Simge Sağın","simge-uzulmedin-mi.jpg","simge-uzulmedin-mi.mp3"),
+    new Music("Üzülmedin Mi","Simge","simge-uzulmedin-mi.jpg","simge-uzulmedin-mi.mp3"),
     new Music("Mahşer","Gökhan Türkmen","GÖKHAN-TÜRKMEN-MAHŞER.jpg","GÖKHAN-TÜRKMEN-MAHŞER.mp3"),
     new Music("Masal Gibi","Semicenk","Semicenk-Masal-Gibi.jpg","Semicenk-Masal-Gibi.mp3"),
     new Music("Leila","Reynmen","Reynmen-Leila.jpg","Reynmen-Leila.mp3"),
