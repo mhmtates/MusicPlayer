@@ -99,10 +99,10 @@ progressbar.addEventListener("input", () => {
 let muteState = "unmuted";
 
 volumeBar.addEventListener("input", (e) => {
-   const value = e.target.value;  // 0-100
-   volumeValue.textContent = value;
-   audio.volume =  value / 100;  //0-1
-   if(value == 0) {
+   const consoleValue = e.target.value; 
+   volumeValue.textContent = consoleValue;
+   audio.volume =  consoleValue / 100;  
+   if(consoleValue == 0) {
      audio.muted = true;
      muteState = "muted";
      volume.classList = "fa-solid fa-volume-xmark";
