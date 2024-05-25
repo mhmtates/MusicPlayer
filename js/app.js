@@ -10,6 +10,7 @@ const currenttime = document.querySelector("#current-time");
 const progressbar = document.querySelector("#progress-bar");
 const volume = document.querySelector("#volume");
 const volumeBar = document.querySelector("#volume-bar");
+const volumeValue = document.querySelector("#volume-value");
 const ul = document.querySelector("#music-list ul")
 
 const player = new MusicPlayer(musicList);
@@ -99,7 +100,8 @@ let muteState = "unmuted";
 
 volumeBar.addEventListener("input", (e) => {
    const value = e.target.value;  // 0-100
-   audio.volume =  value / 100;        //0-1
+   volumeValue.textContent = value;
+   audio.volume =  value / 100;  //0-1
    if(value == 0) {
      audio.muted = true;
      muteState = "muted";
